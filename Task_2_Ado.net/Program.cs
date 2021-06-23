@@ -13,35 +13,31 @@ namespace Task_2_Ado.net
         static string connectionString = "Data Source=DMITRIY-LAPTOP; Database=Task2; Trusted_Connection=True;";
         static void Main(string[] args)
         {
-            //{
-            //    //Работа с БД через LINQ
-            //    using (DataContext db = new DataContext(connectionString))
-            //    {
 
-            //        ShowClientAndTheirCars(db);
+            //Работа с БД через LINQ
+            using (DataContext db = new DataContext(connectionString))
+            {
 
-            //        var newClientId = AddNewClient(db, "Victor", "Victorovich", Gender.Male);
-            //        var vehicleId = GetVehicle(db, "VW", "Passat");
-            //        var newCarId = AddCarToClient(db, newClientId, vehicleId, 152000, 2017);
+                ShowClientAndTheirCars(db);
 
-            //        ShowClientAndTheirCars(db);
+                var newClientId = AddNewClient(db, "Victor", "Victorovich", Gender.Male);
+                var vehicleId = GetVehicle(db, "VW", "Passat");
+                var newCarId = AddCarToClient(db, newClientId, vehicleId, 152000, 2017);
 
-            //        ChangeCarMileage(db, newCarId, 173672);
+                ShowClientAndTheirCars(db);
 
-            //        ShowClientAndTheirCars(db);
+                ChangeCarMileage(db, newCarId, 173672);
 
-            //        DeleteClient(db, newClientId);
+                ShowClientAndTheirCars(db);
 
-            //        ShowClientAndTheirCars(db);
-            //    }
-            //}
+                DeleteClient(db, newClientId);
+
+                ShowClientAndTheirCars(db);
+            }
 
 
             // Json сереализация
-
-
-
-            Serialize<Client>(clients);
+            //Serialize(ListClients());
 
         }
 
@@ -69,7 +65,7 @@ namespace Task_2_Ado.net
 
 
             Console.WriteLine($"{"  Name",-22}{"Car",-17}{"Year Of Production",-25}{"Mileage",-15}{"Type engine",-15}{"Type Transmission"}");
-            Console.WriteLine(new string('=', 120));
+            Console.WriteLine(new string('=', 119));
             foreach (var item in groupRes)
             {
                 Console.WriteLine($"  {item.Key} {item.FirstOrDefault().ClientLastName}");
@@ -78,11 +74,11 @@ namespace Task_2_Ado.net
                     Console.WriteLine($"{"",22}{c.ClientCarBrandName + " " + c.ClientCarModelName,-17}" +
                         $"{c.ClientCarYearProduction,-25}{c.ClientCarMileage,-15}{c.CarEngineType,-15}{c.CarTransmissionType}");
                 }
-                Console.WriteLine(new string('-', 120));
+                Console.WriteLine(new string('-', 119));
             }
 
             Console.WriteLine("\n\n\n");
-            Console.Read();
+            Console.ReadKey();
         }
 
 

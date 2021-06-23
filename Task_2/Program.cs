@@ -17,7 +17,7 @@ namespace Task_2
                 var clientsCars = context.ClientCars.Include(i => i.Vehicle).ThenInclude(i => i.Engine).Include(i => i.Vehicle).ThenInclude(i => i.Transmission).ToList();
 
                 Console.WriteLine($"{"  Name",-22}{"Car",-17}{"Year Of Production",-25}{"Mileage",-15}{"Type engine",-15}{"Type Transmission"}");
-                Console.WriteLine(new string('=', 120));
+                Console.WriteLine(new string('=', 119));
                 foreach (var item in clients)
                 {
                     Console.WriteLine($"  {item.Name} {item.LastName}");
@@ -26,7 +26,7 @@ namespace Task_2
                         Console.WriteLine($"{"",22}{c.Vehicle.BrandName + " " + c.Vehicle.ModelName,-17}" +
                             $"{c.YearProduction,-25}{c.Mileage,-15}{c.Vehicle.Engine.EngineType,-15}{c.Vehicle.Transmission.TransmissionType}");
                     }
-                    Console.WriteLine(new string('-', 120));
+                    Console.WriteLine(new string('-', 119));
                 }
 
                 Console.WriteLine("\n\n\n");

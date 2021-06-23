@@ -1,0 +1,56 @@
+[
+  {
+    "Id": "8948a3d2-e7a7-4519-baf8-0befaf1c80b1",
+    "Name": "Eugen",
+    "LastName": "Eugenievich",
+    "Gender": 0
+  },
+  {
+    "Id": "ebd29ece-d978-4936-812e-338357962351",
+    "Name": "Alina",
+    "LastName": "Petrova",
+    "Gender": 1
+  },
+  {
+    "Id": "f7f229dd-b479-48a8-a6ab-4379db57d7f4",
+    "Name": "Dmitrii",
+    "LastName": "Dmitrivich",
+    "Gender": 0
+  },
+  {
+    "Id": "8264b79c-4904-4dc6-b680-4b697b8ba649",
+    "Name": "Ivan",
+    "LastName": "Ivanovich",
+    "Gender": 0
+  },
+  {
+    "Id": "c9adb4d2-d5b3-45e7-82c1-79bcd8afb032",
+    "Name": "Denis",
+    "LastName": "Denisovich",
+    "Gender": 0
+  },
+  {
+    "Id": "492661c5-3581-4ddc-ae38-8a431c615a4d",
+    "Name": "Yuriy",
+    "LastName": "Yuriyovich",
+    "Gender": 0
+  },
+  {
+    "Id": "e29fdac2-c957-4aad-b9b6-9ea44efd5c70",
+    "Name": "Sofia",
+    "LastName": "Sofievna",
+    "Gender": 1
+  },
+  {
+    "Id": "1dfeb5ca-828f-4bbb-ba26-e2e18ca38425",
+    "Name": "Peter",
+    "LastName": "Petrov",
+    "Gender": 0
+  },
+  {
+    "Id": "28f23c8e-85a4-4da3-8fa4-e6f954748066",
+    "Name": "Mirina",
+    "LastName": "Ivanova",
+    "Gender": 1
+  }
+]
